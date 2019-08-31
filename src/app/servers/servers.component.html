@@ -5,6 +5,13 @@ type="text"
 class="form-control"
 (input) = "onUpdateServerName($event)"
 >
+
+<input
+type="text"
+class="form-control"
+[(ngModel)]=serverName
+placeholder="two way binding"
+>
 <p>{{ serverName }}</p>
 <button
 class="btn btn-primary"
