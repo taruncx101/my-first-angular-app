@@ -30,4 +30,8 @@ class="btn btn-primary"
 </ng-template>
 
 <!-- <p>{{serverCreationStatus}}</p> -->
-<app-server *ngFor="let server of servers"></app-server>
+<p style="background: green; color: white;"
+*ngFor = "let log of logs; let i = index">
+{{i+1}}. {{log}}
+</p>
+<app-server *ngFor="let server of servers;"></app-server>
