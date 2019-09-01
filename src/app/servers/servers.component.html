@@ -20,6 +20,8 @@ class="btn btn-primary"
 >
   Add server
 </button>
-<p>{{serverCreationStatus}}</p>
+<p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
+<p *ngIf="!serverCreated">No server was created</p>
+<!-- <p>{{serverCreationStatus}}</p> -->
 <app-server></app-server>
 <app-server></app-server>
